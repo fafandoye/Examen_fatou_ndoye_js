@@ -1,0 +1,84 @@
+body {
+    font-family:'Roboto',sans-serif ;
+    font-style: normal;
+    font-weight: 300;
+    color: rgb(86, 86, 215);
+    width: 500px;
+}
+
+.container {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 0px;
+    margin: 100px auto 0;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #0b3af4;
+    box-shadow: 0 10px 25px rgb(0, 0,0,0.1);
+    margin-right: 200px;
+    text-align: center;
+}
+
+.header{
+    color: blue;
+    text-align: center;
+   
+    
+}
+
+
+.list-group-item:last-child {
+    border-radius: 0;
+}
+.list-group-item i.fa-square {
+    flex-grow: 1;
+    cursor: pointer;
+    order: 1;
+
+}
+.list-group-item i.fa-check-square {
+    display: none;
+}
+.list-group-item i.fa-trash-alt {
+    flex-grow: 0;
+    cursor: pointer;
+    color: #121111;
+    order: 3;
+    position: absolute;
+    top: 30%;
+    right: 15px;
+     
+}
+.list-group-item i.fa-pen {
+    flex-grow: 3;
+    cursor: pointer;
+    color: #080808;
+    order: 3;
+    position: absolute;
+    top: 30%;
+    right: 50px;
+    
+
+
+} 
+.list-group-item i.fa-trash-alt:hover {
+    color: #e81212;
+}
+.list-group-item .todo-text {
+    flex-grow: 1;
+    margin: 0 10px;
+    order: 2;
+}
+.list-group-item.done i.fa-check-square {
+    cursor: pointer;
+    color: #0c0c0c;
+    display: inline-block;
+}
+.list-group-item.done i.fa-square {
+    display: none;
+}
+.list-group-item.done .todo-text {
+    text-decoration: line-through;
+    color: #888;
+}
+
